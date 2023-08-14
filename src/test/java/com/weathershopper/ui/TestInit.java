@@ -33,7 +33,7 @@ public class TestInit extends TestNGBase {
 
     private void initDriver() throws IOException {
         //TODO local
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\mariia.shushakova\\IdeaProjects\\weathershopper\\src\\main\\resources\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "src\\main\\resources\\msedgedriver.exe");
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(10000, TimeUnit.MILLISECONDS);

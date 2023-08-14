@@ -85,7 +85,6 @@ public class PurchaseTests extends TestInit {
         for (Product product : moisturizersPage.products) {
             if(containsIgnoreCase(product.name.getText(), ingredient)){
                 chosenProductsByIngredient.add(product);
-                System.out.println(product.name.getText());
             }
         }
 
@@ -99,7 +98,6 @@ public class PurchaseTests extends TestInit {
                 resultProduct = product;
             }
         }
-
         expectedPurchase.put(resultProduct.name.getText(), min);
         logger.warn("Product - [{}], price - [{}]", resultProduct.name.getText(), min);
         return resultProduct;
