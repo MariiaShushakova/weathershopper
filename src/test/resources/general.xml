@@ -7,7 +7,7 @@
 
     <test name="Tests" preserve-order="true">
         <classes>
-            <class name="com.weathershopper.ui.e2e.PurchaseTests"></class>
+            <class name="com.weathershopper.ui.e2e.PurchaseTests"/>
         </classes>
     </test>
 </suite>
