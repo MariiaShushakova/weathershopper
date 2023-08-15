@@ -12,11 +12,11 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
-<!--        &lt;!&ndash; docker &ndash;&gt;-->
-<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-<!--        <aspectj.version>1.8.5</aspectj.version>-->
-<!--        <driver>Chrome</driver>-->
-<!--        <domain>${domain}</domain>-->
+        <!-- docker -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <aspectj.version>1.8.5</aspectj.version>
+        <driver>Chrome</driver>
+        <domain>${domain}</domain>
 
     </properties>
 

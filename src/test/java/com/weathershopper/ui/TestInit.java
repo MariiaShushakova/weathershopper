@@ -35,20 +35,20 @@ public class TestInit extends TestNGBase {
 
     private void initDriver() throws IOException {
         //TODO local
-        System.setProperty("webdriver.edge.driver", "src\\main\\resources\\msedgedriver.exe");
-        driver = new EdgeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(10000, TimeUnit.MILLISECONDS);
+//        System.setProperty("webdriver.edge.driver", "src\\main\\resources\\msedgedriver.exe");
+//        driver = new EdgeDriver();
+//        driver.manage().window().maximize();
+//        driver.manage().timeouts().pageLoadTimeout(10000, TimeUnit.MILLISECONDS);
 
         //TODO docker
-//        hubUrl = "http://localhost:4444/wd/hub";
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setBrowserName("chrome");
-//        capabilities.setVersion("115.0");
-//        capabilities.setCapability("enableVNC", true);
-//        capabilities.setCapability("enableVideo", false);
-//        driver = new RemoteWebDriver(URI.create(hubUrl).toURL(), capabilities);
-//        driver.manage().window().maximize();
+        hubUrl = "http://localhost:4444/wd/hub";
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName("chrome");
+        capabilities.setVersion("115.0");
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", false);
+        driver = new RemoteWebDriver(URI.create(hubUrl).toURL(), capabilities);
+        driver.manage().window().maximize();
 
         WebSettings.initFromProperties();
         WebSettings.useDriver(() -> driver);
